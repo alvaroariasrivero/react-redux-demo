@@ -8,7 +8,7 @@ const beerReducer = (state = initialState, action) => {
     switch(action.type){
         case BUY_BEER: return {
             ...state,
-            numOfBeers: state.numOfBeers - 1
+            numOfBeers: state.numOfBeers - action.payload
         }
 
         default: return state

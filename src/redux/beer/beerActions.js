@@ -1,7 +1,8 @@
 import { BUY_BEER } from './beerTypes';
 
-export const buyBeer = () => {
+export const buyBeer = (number = 1) => {
     return {
-        type: BUY_BEER
+        type: BUY_BEER,
+        payload: number
     }
 }
