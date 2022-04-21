@@ -8,12 +8,17 @@ import './App.css';
 import HooksCakeContainer from './components/HooksCakeContainer';
 import HooksIceCreamContainer from './components/HooksIceCreamContainer';
 import HooksBeerContainer from './components/HooksBeerContainer';
+import ItemContainer from './components/ItemContainer';
+import UserContainer from './components/UserContainer';
 // import NewCakeContainer from './components/NewCakeContainer';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+        <UserContainer/>
+        <ItemContainer cake/>
+        <ItemContainer/>
         {/* <CakeContainer/> */}
         <HooksCakeContainer/>
         {/* <NewCakeContainer/> */}
